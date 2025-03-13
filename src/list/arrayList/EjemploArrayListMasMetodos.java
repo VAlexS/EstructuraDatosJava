@@ -1,11 +1,9 @@
-package arrayList;
+package list.arrayList;
 
 import clases.Alumno;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.Objects;
 
 public class EjemploArrayListMasMetodos {
 

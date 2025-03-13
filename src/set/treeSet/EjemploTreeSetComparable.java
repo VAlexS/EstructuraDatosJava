@@ -1,4 +1,4 @@
-package treeSet;
+package set.treeSet;
 
 import clases.Alumno;
 
