@@ -5,6 +5,7 @@ import clases.Alumno;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 
 public class EjemploLinkedList {
 
@@ -57,6 +58,39 @@ public class EjemploLinkedList {
         enlazadaAlumnos.removeFirst();
 
         enlazadaAlumnos.removeLast();
+
+        //meteme nuevos alumnos
+        enlazadaAlumnos.add(new Alumno("Victor", 10));
+        enlazadaAlumnos.add(new Alumno("Enrique", 6));
+        enlazadaAlumnos.add(new Alumno("Lucia", 9));
+        enlazadaAlumnos.add(new Alumno("Lucas", 2));
+        enlazadaAlumnos.add(new Alumno("Jano", 3));
+
+        enlazadaAlumnos.push(new Alumno("Pedro", 0));
+        enlazadaAlumnos.push(new Alumno("Santiago", 10));
+
+
+        System.out.println("Alumnos con list iterator");
+        System.out.println("______________________________________");
+        //iteraciones
+        ListIterator<Alumno> li = enlazadaAlumnos.listIterator();
+
+        while (li.hasNext()){
+            Alumno alumno = li.next();
+            System.out.println(alumno);
+        }
+
+        System.out.println("Alumnos con list iterator hacia atras");
+        System.out.println("______________________________________");
+
+        while (li.hasPrevious()){
+            Alumno alumno = li.previous();
+            System.out.println(alumno);
+        }
+
+
+
+
 
 
 
